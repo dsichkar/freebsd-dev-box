@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
 
-sudo pkg install -yf bash curl git ruby-build sqlite3 libxml2 libxslt rbenv
+function install {
+  echo installing $1
+  shift
+  sudo pkg install -yf "$@" >/dev/null 2>&1
+}
+
+install Bash bash
+install Curl curl
+install Git git
+install Ruby-build ruby-build
+install Sqlite3 sqlite3
+install Libxml2 libxml2
+install Libxslt libxslt
+install Rbenv rbenv
 
