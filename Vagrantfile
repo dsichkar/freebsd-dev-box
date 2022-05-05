@@ -60,5 +60,5 @@ Vagrant.configure("2") do |config|
   # View the documentation for the provider you are using for more
   # information on available options.
 
-  config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
+  config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true, privileged: false
 end
