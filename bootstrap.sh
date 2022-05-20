@@ -14,6 +14,7 @@ install Sqlite3 sqlite3
 install Libxml2 libxml2
 install Libxslt libxslt
 install Rbenv rbenv
+install Apache apache24
 
 rbenv install 2.7.4
 eval "$(rbenv init - bash)"
