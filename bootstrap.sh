@@ -30,3 +30,5 @@ rbenv global 2.7.4
 gem install sqlite3 -N -- --with-sqlite3-dir=/usr/local --with-sqlite3-lib=/usr/local/lib
 gem install bundler passenger -N
 
+yes | passenger-install-apache2-module
+
