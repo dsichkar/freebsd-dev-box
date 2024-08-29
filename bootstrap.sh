@@ -8,15 +8,10 @@ function install {
 
 install Curl curl
 install Git git
-install Apache apache24
-install Mysql mysql57-server
+install Nginx nginx-full
 install Rails7 rubygem-rails70
 
-sudo service apache24 enable
-sudo service apache24 start
-sudo service mysql-server enable
-sudo service mysql-server start
+sudo service nginx enable
+sudo service nginx start
 
 sudo gem install bundler passenger -N
-
-yes | sudo passenger-install-apache2-module
